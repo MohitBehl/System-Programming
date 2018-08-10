@@ -1,0 +1,11 @@
+#include<iostream.h>
+int main()
+{
+printf("hello world\n");
+printf("world says hello back\n");
+int i = 1;
+printf("%d",i);
+int j = -6;
+i++;
+printf("%d",j);
+}
