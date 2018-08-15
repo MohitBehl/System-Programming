@@ -1,7 +1,7 @@
 %{
 char temp[1000];
 %}
-word [A-Za-z][A-Za-z0-9]*
+word ([A-Za-z][A-Za-z0-9]*)|[0-9]+
 %%
 {word} {
         int i = 0;
@@ -25,6 +25,7 @@ word [A-Za-z][A-Za-z0-9]*
           }
         i++;
         }
+        temp[i] = '\0';
         printf("original :%s\ncyphered :%s\n",yytext,temp);
 }
 . { }

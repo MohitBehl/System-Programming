@@ -4,7 +4,7 @@
 %}
 word [A-Za-z][A-Za-z0-9]*
 line \n
-space [ ]
+space [ \t]
 allChar .
 %%
 {word}  {++wordCount;characterCount=characterCount+yyleng;}
